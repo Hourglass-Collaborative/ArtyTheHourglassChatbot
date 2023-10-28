@@ -7,8 +7,13 @@ from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import nltk
-#nltk.download("stopwords")
-stop_words = set(stopwords.words("english"))
+
+with open("english.txt") as file:
+    lines = [line.rstrip() for line in file]
+
+stop_words = set(lines)
+
+#stop_words = set(stopwords.words("english"))
 stop_words.add("hourglass")
 def preprocess(input_sentence):
     input_sentence = input_sentence.lower()
