@@ -6,6 +6,8 @@ nlp = en_core_web_trf.load()
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import nltk
+nltk.download("stopwords")
 stop_words = set(stopwords.words("english"))
 stop_words.add("hourglass")
 def preprocess(input_sentence):
