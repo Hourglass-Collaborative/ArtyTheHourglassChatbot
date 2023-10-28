@@ -1,0 +1,6 @@
+streamlit
+collections
+spacy
+en_core_web_trf
+re
+nltk
