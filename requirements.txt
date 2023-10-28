@@ -1,6 +1,6 @@
 streamlit
 collections
-spacy
-en_core_web_trf
+spacy>=3.0.0,<4.0.0
+en_core_web_trf @ https://github.com/explosion/spacy-models/releases/tag/en_core_web_trf-3.7.2/en_core_web_trf-3.7.2-py3-none-any.whl
 re
 nltk
