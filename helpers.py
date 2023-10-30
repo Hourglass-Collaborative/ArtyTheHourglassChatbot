@@ -1,8 +1,8 @@
 import re
 from collections import Counter
 import spacy
-import en_core_web_trf
-nlp = en_core_web_trf.load()
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 #from nltk.corpus import stopwords
