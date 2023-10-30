@@ -3,8 +3,8 @@ from collections import Counter
 from responses import responses, blank_spot, welcome_message
 from helpers import preprocess, compare_overlap, pos_tag, extract_nouns, compute_similarity
 import spacy
-import en_core_web_trf
-nlp = en_core_web_trf.load()
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 import re
 
 st.set_page_config(page_title="🩷💬")
@@ -15,7 +15,7 @@ st.title('Chat With Hourglass')
 with st.sidebar:
     st.title("Exploring GenAI and Chatbots: A Series")
     st.write("This chatbot created by Tyler Shannon of Hourglass Collaborative is an ongoing exploriation and research effort into the power of Generative AI to drive better customer experiences and business outcomes.")
-    st.write("You can learn more about the project here: \n\n https://hourglasscollaborative.com/")
+    st.write("You can learn more about the project here: \n\n https://medium.com/@tjshannon/sharing-the-technical-side-of-our-business-687ce1c7e0ea")
     st.write("This chatbot is one in a series of chatbots that use different applications of AI and NLP to assist you in answering your questions.")
     st.header("🤖 Arty, the Hourglass Chatbot")
     st.write("Arty is a closed-domain retrieval-based chatbot. This means that Arty uses Natural Language Processing (NLP) to understand what you say, and then pairs the intent of your question with the best possible answer. Arty will pull the best possible answer from a document library called the \"Hourglass Knowledge Hub.\" In other words, Arty uses AI to understand you, but cannot generate unique responses all on their own.")
